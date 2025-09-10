@@ -44,17 +44,22 @@
         padding: 20px;
       }
       body > section.content.active {
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+        gap: 20px;
+        padding: 20px;
       }
       .subsection {
         background-color: white;
         border-radius: 8px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        margin: 10px 0;
+        margin: 0;
         padding: 10px;
       }
       h2 {
         color: #c2185b;
+        grid-column: 1 / -1; 
+        margin-bottom: 20px;
       }
       h3 {
         color: #e91e63;
@@ -98,7 +103,6 @@
       <button data-target="findannee">Fin d'année</button>
     </nav>
 
-    <!-- Début d'année (Chapitres 1 à 12) -->
     <section id="debutannee" class="content active">
       <h2>Début d'année</h2>
 
@@ -123,7 +127,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 3 : Borne supérieure dans &Ropf;</h3>
+        <h3>Chapitre 3 : Borne supérieure dans \(\mathbb{R}\)</h3>
         <ul>
           <li><a href="2526/bornesup.pdf" download>Le cours</a></li>
           <li><a href="2526/bornesup-pres.pdf" download>La présentation</a></li>
@@ -241,222 +245,17 @@
       <h2>Analyse séquentielle et topologie</h2>
 
       <div class="subsection">
-        <h3>Chapitre 6 : Suites</h3>
+        <h3>Chapitre 14 : Suites de nombres réels et complexes</h3>
         <ul>
-          <li><a href="2526/chapitre6.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre6-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre6-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre6-sol.pdf" download>Propositions de solutions</a></li>
+          <li><a href="25214/chapitre14.pdf" download>Le cours</a></li>
+          <li><a href="25214/chapitre14-pres.pdf" download>La présentation</a></li>
+          <li><a href="25214/chapitre14-exo.pdf" download>Les exercices</a></li>
+          <li><a href="25214/chapitre14-sol.pdf" download>Propositions de solutions</a></li>
         </ul>
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 7 : Intégration élémentaire</h3>
-        <ul>
-          <li><a href="2526/chapitre7.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre7-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre7-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre7-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 6 : Suites récurrentes</h3>
-        <ul>
-          <li><a href="2526/chapitre6.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre6-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre6-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre6-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 7 : Intégration élémentaire</h3>
-        <ul>
-          <li><a href="2526/chapitre7.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre7-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre7-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre7-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Analyse réelle (Chapitres 22 à 35) -->
-    <section id="analyse" class="content">
-      <h2>Analyse réelle</h2>
-
-      <div class="subsection">
-        <h3>Chapitre 22 : Dérivation en analyse réelle</h3>
-        <ul>
-          <li><a href="2526/chapitre22.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre22-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre22-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre22-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 23 : Séries numériques</h3>
-        <ul>
-          <li><a href="2526/chapitre23.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre23-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre23-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre23-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 24 : Intégrale impropre</h3>
-        <ul>
-          <li><a href="2526/chapitre24.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre24-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre24-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre24-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 25 : Suites de fonctions</h3>
-        <ul>
-          <li><a href="2526/chapitre25.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre25-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre25-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre25-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 26 : Uniforme convergence</h3>
-        <ul>
-          <li><a href="2526/chapitre26.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre26-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre26-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre26-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 27 : Fonctions réelles sur un intervalle</h3>
-        <ul>
-          <li><a href="2526/chapitre27.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre27-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre27-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre27-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 28 : Fonctions réelles monotones</h3>
-        <ul>
-          <li><a href="2526/chapitre28.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre28-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre28-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre28-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 29 : Intégration multiple</h3>
-        <ul>
-          <li><a href="2526/chapitre29.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre29-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre29-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre29-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 30 : Champs de vecteurs</h3>
-        <ul>
-          <li><a href="2526/chapitre30.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre30-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre30-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre30-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 31 : Équations aux dérivées partielles</h3>
-        <ul>
-          <li><a href="2526/chapitre31.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre31-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre31-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre31-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 32 : Séries de Fourier</h3>
-        <ul>
-          <li><a href="2526/chapitre32.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre32-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre32-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre32-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-    </section>
-
-    <section id="sommation" class="content">
-      <h2>Procédés sommatoires discrets et continus</h2>
-
-      <div class="subsection">
-        <h3>Chapitre 33 : Transformée de Laplace</h3>
-        <ul>
-          <li><a href="2526/chapitre33.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre33-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre33-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre33-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 34 : Équations différentielles avancées</h3>
-        <ul>
-          <li><a href="2526/chapitre34.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre34-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre34-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre34-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 35 : Fonctions spéciales</h3>
-        <ul>
-          <li><a href="2526/chapitre35.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre35-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre35-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre35-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- (Chapitres 13 à 21) -->
-    <section id="algebregenerale" class="content">
-      <h2>Algèbre générale</h2>
-
-      <div class="subsection">
-        <h3>Chapitre 13 : Arithmétique dans l'anneau (ℤ, +, ×)</h3>
-        <ul>
-          <li><a href="2526/chapitre13.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre13-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre13-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre13-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-      
-      <div class="subsection">
-        <h3>Chapitre 14 : Structures de groupes</h3>
-        <ul>
-          <li><a href="2526/chapitre14.pdf" download>Le cours</a></li>
-          <li><a href="2526/chapitre14-pres.pdf" download>La présentation</a></li>
-          <li><a href="2526/chapitre14-exo.pdf" download>Les exercices</a></li>
-          <li><a href="2526/chapitre14-sol.pdf" download>Propositions de solutions</a></li>
-        </ul>
-      </div>
-
-      <div class="subsection">
-        <h3>Chapitre 15 : Anneaux commutatifs</h3>
+        <h3>Chapitre 15 : Relations de comparaisons sur les suites</h3>
         <ul>
           <li><a href="2526/chapitre15.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre15-pres.pdf" download>La présentation</a></li>
@@ -466,7 +265,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 16 : Calcul matriciel élémentaire</h3>
+        <h3>Chapitre 16 : Suites récurrentes</h3>
         <ul>
           <li><a href="2526/chapitre16.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre16-pres.pdf" download>La présentation</a></li>
@@ -476,7 +275,60 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 17 : Systèmes d'équations linéaires</h3>
+        <h3>Chapitre 17 : Topologie de \(\mathbb{R}^{p}\)</h3>
+        <ul>
+          <li><a href="2526/chapitre17.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre17-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre17-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre17-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="algebregenerale" class="content">
+      <h2>Algèbre générale</h2>
+
+      <div class="subsection">
+        <h3>Chapitre 18 : Groupes</h3>
+        <ul>
+          <li><a href="2526/chapitre14.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre14-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre14-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre14-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Chapitre 19 : Groupe symétrique</h3>
+        <ul>
+          <li><a href="2526/chapitre14.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre14-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre14-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre14-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+      <div class="subsection">
+        <h3>Chapitre 20 : Arithmétique dans l'anneau (ℤ, +, ×)</h3>
+        <ul>
+          <li><a href="2526/chapitre13.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre13-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre13-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre13-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+      
+      <div class="subsection">
+        <h3>Chapitre 21 : Calcul matriciel élémentaire</h3>
+        <ul>
+          <li><a href="2526/chapitre16.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre16-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre16-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre16-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Chapitre 22 : Systèmes d'équations linéaires</h3>
         <ul>
           <li><a href="2526/chapitre17.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre17-pres.pdf" download>La présentation</a></li>
@@ -486,7 +338,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 18 : Matrices inversibles</h3>
+        <h3>Chapitre 23 : Matrices inversibles</h3>
         <ul>
           <li><a href="2526/chapitre18.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre18-pres.pdf" download>La présentation</a></li>
@@ -496,7 +348,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 19 : Anneaux, Corps</h3>
+        <h3>Chapitre 24 : Anneaux, Corps</h3>
         <ul>
           <li><a href="2526/chapitre19.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre19-pres.pdf" download>La présentation</a></li>
@@ -506,7 +358,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 20 : Polynômes</h3>
+        <h3>Chapitre 25 : Polynômes</h3>
         <ul>
           <li><a href="2526/chapitre20.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre20-pres.pdf" download>La présentation</a></li>
@@ -516,7 +368,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 21 : Fractions rationnelles</h3>
+        <h3>Chapitre 26 : Fractions rationnelles</h3>
         <ul>
           <li><a href="2526/chapitre21.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre21-pres.pdf" download>La présentation</a></li>
@@ -524,9 +376,110 @@
           <li><a href="2526/chapitre21-sol.pdf" download>Propositions de solutions</a></li>
         </ul>
       </div>
-        </section>
+    </section>
 
-    <!-- Algèbre linéaire sans réduction (Chapitres 36 à 42) -->
+
+    <section id="analyse" class="content">
+      <h2>Analyse réelle</h2>
+
+      <div class="subsection">
+        <h3>Chapitre 27 : Limite, continuité</h3>
+        <ul>
+          <li><a href="2526/chapitre22.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre22-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre22-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre22-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Chapitre 28 : Relations de comparaisons sur les fonctions</h3>
+        <ul>
+          <li><a href="2526/chapitre22.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre22-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre22-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre22-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Chapitre 29 : Dérivées</h3>
+        <ul>
+          <li><a href="2526/chapitre23.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre23-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre23-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre23-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Chapitre 30 : Convexité</h3>
+        <ul>
+          <li><a href="2526/chapitre24.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre24-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre24-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre24-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Chapitre 31 : Développements limités</h3>
+        <ul>
+          <li><a href="2526/chapitre25.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre25-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre25-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre25-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+
+    </section>
+
+
+    <section id="sommation" class="content">
+      <h2>Procédés sommatoires discrets et continus</h2>
+
+      <div class="subsection">
+        <h3>Chapitre 32 : Convergence simple et uniforme des suites de fonctions</h3>
+        <ul>
+          <li><a href="2526/chapitre26.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre26-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre26-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre26-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Chapitre 33 : Intégrale de Riemann</h3>
+        <ul>
+          <li><a href="2526/chapitre27.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre27-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre27-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre27-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Chapitre 34 : Équations différentielles linéaire scalaires du premier ordre</h3>
+        <ul>
+          <li><a href="2526/chapitre28.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre28-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre28-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre28-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Chapitre 35 : Séries numériques</h3>
+        <ul>
+          <li><a href="2526/chapitre29.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre29-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre29-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre29-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+    </section>
+
+
     <section id="linalg" class="content">
       <h2>Algèbre linéaire sans réduction</h2>
 
@@ -551,7 +504,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 38 : Dimension et bases</h3>
+        <h3>Chapitre 38 : Sommes et projecteurs</h3>
         <ul>
           <li><a href="2526/chapitre38.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre38-pres.pdf" download>La présentation</a></li>
@@ -561,7 +514,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 39 : Matrices et applications</h3>
+        <h3>Chapitre 39 : Génération et liberté</h3>
         <ul>
           <li><a href="2526/chapitre39.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre39-pres.pdf" download>La présentation</a></li>
@@ -571,7 +524,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 40 : Formes bilinéaires</h3>
+        <h3>Chapitre 40 : Dimension</h3>
         <ul>
           <li><a href="2526/chapitre40.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre40-pres.pdf" download>La présentation</a></li>
@@ -581,7 +534,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 41 : Théorème du rang</h3>
+        <h3>Chapitre 41 : Applications linéaires et dimension</h3>
         <ul>
           <li><a href="2526/chapitre41.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre41-pres.pdf" download>La présentation</a></li>
@@ -591,7 +544,7 @@
       </div>
 
       <div class="subsection">
-        <h3>Chapitre 42 : Valeurs propres et vecteurs propres</h3>
+        <h3>Chapitre 42 : Représentation matricielle en algèbre linéaire</h3>
         <ul>
           <li><a href="2526/chapitre42.pdf" download>Le cours</a></li>
           <li><a href="2526/chapitre42-pres.pdf" download>La présentation</a></li>
@@ -601,9 +554,9 @@
       </div>
     </section>
 
-    <!-- Probabilités (Chapitres 43 à 45) -->
+
     <section id="proba" class="content">
-      <h2>Probabilités (Chapitres 43 à 45)</h2>
+      <h2>Probabilités</h2>
 
       <div class="subsection">
         <h3>Chapitre 43 : Espace probabilisé fini</h3>
@@ -636,9 +589,8 @@
       </div>
     </section>
 
-    <!-- Algèbre linéaire avec réduction (Chapitres 46 à 47) -->
     <section id="linalg2" class="content">
-      <h2>Algèbre linéaire avec réduction (Chapitres 46 à 47)</h2>
+      <h2>Algèbre linéaire avec réduction</h2>
 
       <div class="subsection">
         <h3>Chapitre 46 : Déterminants</h3>
@@ -661,9 +613,8 @@
       </div>
     </section>
 
-    <!-- Fin d'année (Chapitres 48 à 53) -->
     <section id="findannee" class="content">
-      <h2>Fin d'année (Chapitres 48 à 53)</h2>
+      <h2>Fin d'année</h2>
 
       <div class="subsection">
         <h3>Chapitre 48 : Espaces préhilbertiens réels, espaces vectoriels euclidiens</h3>
@@ -685,7 +636,60 @@
         </ul>
       </div>
 
-      <div class="subsection">...
+      <div class="subsection">
+        <h3>Chapitre 50 : Fonctions de deux variables réelles, limite, continuité</h3>
+        <ul>
+          <li><a href="2526/chapitre49.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre49-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre49-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre49-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+      <div class="subsection">
+        <h3>Chapitre 51 : Calcul différentiel dans \(\mathbb{R}^{2}\)</h3>
+        <ul>
+          <li><a href="2526/chapitre49.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre49-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre49-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre49-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+      <div class="subsection">
+        <h3>Chapitre 52 : Isométries vectorielles</h3>
+        <ul>
+          <li><a href="2526/chapitre49.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre49-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre49-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre49-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+      <div class="subsection">
+        <h3>Chapitre 53 : Topologie sur les espaces vectoriels normés</h3>
+        <ul>
+          <li><a href="2526/chapitre49.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre49-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre49-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre49-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+      <div class="subsection">
+        <h3>Chapitre 54 : Dualité dans les espaces vectoriels euclidiens</h3>
+        <ul>
+          <li><a href="2526/chapitre49.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre49-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre49-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre49-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
+      <div class="subsection">
+        <h3>Chapitre 55 : Familles sommables</h3>
+        <ul>
+          <li><a href="2526/chapitre49.pdf" download>Le cours</a></li>
+          <li><a href="2526/chapitre49-pres.pdf" download>La présentation</a></li>
+          <li><a href="2526/chapitre49-exo.pdf" download>Les exercices</a></li>
+          <li><a href="2526/chapitre49-sol.pdf" download>Propositions de solutions</a></li>
+        </ul>
+      </div>
     </section>
 
     <script>
@@ -701,6 +705,9 @@
         }));
       });
     </script>
+
+
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
     <footer>
       <p>© jphjourdan</p>
     </footer>
